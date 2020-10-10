@@ -1,0 +1,33 @@
+{
+    "name": "escaped-chasm-jp-patch",
+    "version": "0.1.0",
+    "description": "Dweller’s Empty Path Unofficial Japanese translate patch",
+    "author": "Proudust <proudust@gmail.com>",
+    "license": "MIT",
+    "repository": "github:proudust/escaped-chasm-jp-patch",
+    "homepage": "https://github.com/proudust/escaped-chasm-jp-patch#readme",
+    "bugs": "https://github.com/proudust/escaped-chasm-jp-patch/issues",
+    "private": true,
+    "scripts": {
+        "build": "rimraf dist && tsc && cpy www '!**/*.ts' dist --parents && cpy README.md dist --rename=README.txt",
+        "lint": "prettier --write --ignore-path .eslintignore . && eslint . --fix",
+        "lint:ci": "prettier --check --ignore-path .eslintignore . && eslint .",
+        "test": "jest",
+        "zip": "cd dist && bestzip ../escaped-chasm-jp-patch.zip *"
+    },
+    "devDependencies": {
+        "@types/jest": "^26.0.14",
+        "@typescript-eslint/eslint-plugin": "^4.4.0",
+        "@typescript-eslint/parser": "^4.4.0",
+        "bestzip": "^2.1.7",
+        "cpy-cli": "^3.1.1",
+        "eslint": "^7.11.0",
+        "eslint-config-prettier": "^6.12.0",
+        "jest": "^26.5.2",
+        "prettier": "^2.1.2",
+        "rimraf": "^3.0.2",
+        "rpgmakermv_typescript_dts": "^1.5.2",
+        "ts-jest": "^26.4.1",
+        "typescript": "^4.0.3"
+    }
+}
