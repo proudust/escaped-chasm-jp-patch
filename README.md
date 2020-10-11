@@ -8,7 +8,7 @@
 ## インストール方法
 
 1. [itch.io](https://tuyoki.itch.io/escaped-chasm)
-   から Dweller's Empty Path 本体 をダウンロードし、解凍します
+   から Escaped Chasm 本体 をダウンロードし、解凍します
 
 2. [GitHub Releases](https://github.com/proudust/escaped-chasm-jp-patch/releases/latest)
    から最新の日本語化パッチをダウンロードし、解凍します
@@ -28,6 +28,18 @@ Escaped Chasm の翻訳は匿名の有志によって行われています。
 
 ## 関連リンク
 
+### Escaped Chasm
+
 - [配布ページ](https://github.com/proudust/escaped-chasm-jp-patch/releases)
+
 - [翻訳所](https://docs.google.com/spreadsheets/d/1Y3B9J04nzLffBrBhwVweI1rkKI7qOvIW87FxM6bt8RA/edit?usp=sharing)
+
 - [ソースコード](https://github.com/proudust/escaped-chasm-jp-patch)
+
+### Dweller's シリーズ
+
+- [次作: Dweller's Empty Path](https://tuyoki.itch.io/dwellers-empty-path)
+
+  - [日本語化パッチ](https://github.com/proudust/escaped-chasm-jp-patch)
+
+- [前作: Dwellers of the Mountain's Forest (映像作品)](https://tuyoki.itch.io/dwellers-of-the-mountains-forest)
