@@ -188,15 +188,7 @@ Graphics.playVideo = function (src) {
 interface JP_Patch {
     Bitmap_measureTextWidth: Bitmap['measureTextWidth'];
     Window_Base_drawText: Window_Base['drawText'];
-    Window_Base_resetFontSettings: Window_Base['resetFontSettings'];
 }
-
-// Change font outline color
-JP_Patch.Window_Base_resetFontSettings = Window_Base.prototype.resetFontSettings;
-Window_Base.prototype.resetFontSettings = function () {
-    JP_Patch.Window_Base_resetFontSettings.call(this);
-    this.contents.outlineColor = 'rgba(255, 255, 255, 0)';
-};
 
 // Adjust letter spacing
 JP_Patch.Bitmap_measureTextWidth = Bitmap.prototype.measureTextWidth;
