@@ -9,6 +9,8 @@ module.exports = {
         Graphics: function () {},
         Window_Base: Window_Base,
         Window_ChoiceList: function () {},
+        Window_Options: function () {},
+        Window_TitleCommand: function () {},
         Yanfly: { Param: { LineHeight: 18 } },
     },
 };
