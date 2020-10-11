@@ -7,7 +7,7 @@
  */
 
 /*:ja
- * @plugindesc Dweller's Empty Path 日本語化パッチ
+ * @plugindesc Escaped Chasm 日本語化パッチ
  * @author Proudust (Twitter@Proudust)
  * @version 0.1.0
 
@@ -152,6 +152,34 @@ DataManager.loadDataFile = function (name, src) {
     xhr.send();
 };
 /* eslint-enable @typescript-eslint/no-explicit-any */
+
+//=================================================================================================
+// Movies subtitles setting
+//=================================================================================================
+
+interface JP_Patch {
+    Graphics_initialize: typeof Graphics['initialize'];
+    Graphics_playVideo: typeof Graphics['playVideo'];
+    _track: HTMLTrackElement;
+}
+
+JP_Patch.Graphics_initialize = Graphics.initialize;
+Graphics.initialize = function (width, height, type) {
+    JP_Patch.Graphics_initialize.call(this, width, height, type);
+
+    // create video track element
+    JP_Patch._track = document.createElement('track');
+    JP_Patch._track.default = true;
+    JP_Patch._track.kind = 'subtitles';
+    JP_Patch._track.srclang = 'ja';
+    Graphics._video.appendChild(JP_Patch._track);
+};
+
+JP_Patch.Graphics_playVideo = Graphics.playVideo;
+Graphics.playVideo = function (src) {
+    JP_Patch.Graphics_playVideo.call(this, src);
+    JP_Patch._track.src = src.replace(/^movies\/(\w+).webm$/, 'vtt/$1.vtt');
+};
 
 //=================================================================================================
 // Japanese font setting
