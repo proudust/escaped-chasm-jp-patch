@@ -3,6 +3,8 @@
 [Temmie Chang](https://twitter.com/tuyoki) 氏製作の短編 RPG
 [Escaped Chasm](https://tuyoki.itch.io/escaped-chasm) を日本語化する非公式パッチです。
 
+![タイトル画面](https://user-images.githubusercontent.com/20186429/95670696-86a19300-0bc9-11eb-8e76-8e530ac491af.png)
+
 ## インストール方法
 
 1. [itch.io](https://tuyoki.itch.io/escaped-chasm)
