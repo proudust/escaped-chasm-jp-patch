@@ -6,8 +6,9 @@ module.exports = {
     globals: {
         Bitmap: function () {},
         DataManager: function () {},
+        Graphics: function () {},
         Window_Base: Window_Base,
         Window_ChoiceList: function () {},
-        Yanfly: { Param: { LineHeight: 34 } },
+        Yanfly: { Param: { LineHeight: 18 } },
     },
 };
