@@ -186,8 +186,8 @@ Graphics.playVideo = function (src) {
 //=================================================================================================
 
 interface JP_Patch {
-    Bitmap_drawText: Bitmap['drawText'];
     Bitmap_measureTextWidth: Bitmap['measureTextWidth'];
+    Window_Base_drawText: Window_Base['drawText'];
     Window_Base_resetFontSettings: Window_Base['resetFontSettings'];
 }
 
@@ -210,4 +210,13 @@ declare var Yanfly: { Param: { LineHeight: number } };
 // Fix bottom of choice list being cut off
 Window_ChoiceList.prototype.lineHeight = function () {
     return Yanfly.Param.LineHeight + 6;
+};
+
+// Adjust the y of the title command and options
+JP_Patch.Window_Base_drawText = Window_Base.prototype.drawText;
+Window_TitleCommand.prototype.drawText = function (text, x, y, mW, align) {
+    JP_Patch.Window_Base_drawText.call(this, text, x, y - 4, mW, align);
+};
+Window_Options.prototype.drawText = function (text, x, y, mW, align) {
+    JP_Patch.Window_Base_drawText.call(this, text, x, y - 4, mW, align);
 };

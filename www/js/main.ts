@@ -5,7 +5,7 @@
 var enableJpPatch = true;
 if (enableJpPatch) {
     // Replace "YEP_CoreEngine" plugin parameters
-    $plugins[3].parameters['Font Size'] = '18';
+    $plugins[3].parameters['Font Size'] = '20';
 
     // Disable "Bitmap Fonts" plugin
     $plugins[4].status = false;
