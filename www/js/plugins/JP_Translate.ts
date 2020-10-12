@@ -154,6 +154,48 @@ DataManager.loadDataFile = function (name, src) {
 /* eslint-enable @typescript-eslint/no-explicit-any */
 
 //=================================================================================================
+// Splash subtitles setting
+//=================================================================================================
+
+declare class Scene_Splash {
+    _customSplash: Sprite;
+    createSplashes(): void;
+    start(): void;
+    centerSprite(sprite: Sprite): void;
+}
+
+interface JP_Patch {
+    Scene_Splash_createSplashes: () => void;
+    Scene_Splash_start: () => void;
+}
+
+JP_Patch.Scene_Splash_createSplashes = Scene_Splash.prototype.createSplashes;
+Scene_Splash.prototype.createSplashes = function () {
+    JP_Patch.Scene_Splash_createSplashes.call(this);
+
+    // 何故か無いと Scene_Splash#start での drawText が反映されない
+    this._customSplash.bitmap.drawText('', 0, 0);
+};
+
+JP_Patch.Scene_Splash_start = Scene_Splash.prototype.start;
+Scene_Splash.prototype.start = function () {
+    JP_Patch.Scene_Splash_start.call(this);
+    if (this._customSplash != null) {
+        var subtitles = [
+            '注意：高音・低音が大きな音で続き、',
+            '不安になるシーンがあるかもしれません',
+            '(また、激しく点滅するシーンもあるかもしれません)',
+        ];
+        for (var i = 0; i < subtitles.length; i++) {
+            var text = subtitles[i];
+            var y = 20 + 36 * i;
+            this._customSplash.bitmap.drawText(text, 50, y, undefined, 0);
+        }
+        this._customSplash.bitmap.drawText('―テミー', 600, 530, undefined, 0);
+    }
+};
+
+//=================================================================================================
 // Movies subtitles setting
 //=================================================================================================
 
