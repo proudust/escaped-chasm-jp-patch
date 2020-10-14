@@ -270,6 +270,7 @@
             "Basement": "地下室",
             "\\SE[1]It's a mirror.\\>": "\\SE[1]鏡。\\>",
             "                        It's you!\\> ": "             そこに映るのはあなた！\\>",
+            "                        Its you! \\>": "             そこに映るのはあなた！\\>",
             "                  You look cute today. ": "           ほら、今日はとてもかわいい。",
             "\\SE[1]The boiler... It's scary looking.\\>": "\\SE[1]ボイラー装置... なんだか怖い。\\>",
             "\\SE[1]It's a box.\\>": "\\SE[1]箱。\\>",
@@ -1065,10 +1066,9 @@
             "Though, maybe for the wrong reasons.": "たとえそれが、間違った理由で惹かれるのだとしても。",
             "Maybe one day she might realize and remember": "もしかしたらいつの日か、彼女は記憶を取り戻すかもしれない。",
             "The real reason she's drewn to her.": "そして、あの少女に惹かれてやまない本当の理由を思い出すかもしれない。",
-            "May Contain some loud and prelonged high/low pitch": "注意：高音・低音が大きな音で続き、不安になるシーンがあるかもしれません（また、激しく点滅するシーンもあるかもしれません）―テミー",
-            "moments and unsetting atmosphere/elements.": "",
-            "(also may contain some flashing lights moments)": "",
-            "―TEMMIE": ""
+            "May Contain some loud and prelonged high/low pitch": "注意：高音・低音が大きな音で続き、",
+            "moments and unsetting atmosphere/elements.": "不安になるシーンがあるかもしれません",
+            "(also may contain some flashing lights moments)": "（また、激しく点滅するシーンもあるかもしれません）"
         }
     },
     "System.json": {
