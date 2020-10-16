@@ -1,6 +1,6 @@
 # Escaped Chasm 日本語化パッチ
 
-[Temmie Chang](https://twitter.com/tuyoki) 氏製作の短編 RPG
+[Temmie Chang](https://twitter.com/tuyoki) 氏製作の Dwellers シリーズ第二作
 [Escaped Chasm](https://tuyoki.itch.io/escaped-chasm) を日本語化する非公式パッチです。
 
 ![タイトル画面](https://user-images.githubusercontent.com/20186429/95670696-86a19300-0bc9-11eb-8e76-8e530ac491af.png)
@@ -30,16 +30,28 @@ Escaped Chasm の翻訳は匿名の有志によって行われています。
 
 ### Escaped Chasm
 
+- [配布ページ](https://tuyoki.itch.io/escaped-chasm)
+
+- [プロモーションビデオ](https://youtu.be/f9X5MfNy3sk)
+
+- [Temmie 氏のコメント](https://tuyoki.itch.io/escaped-chasm/devlog/75224/thank-you-everyone-regarding-bugs-fan-translations-and-streaming)
+
+### Escaped Chasm 日本語化
+
 - [配布ページ](https://github.com/proudust/escaped-chasm-jp-patch/releases)
 
 - [翻訳所](https://docs.google.com/spreadsheets/d/1Y3B9J04nzLffBrBhwVweI1rkKI7qOvIW87FxM6bt8RA/edit?usp=sharing)
 
 - [ソースコード](https://github.com/proudust/escaped-chasm-jp-patch)
 
-### Dweller's シリーズ
+- [Escaped Chasm 字幕プレイ動画](https://www.nicovideo.jp/watch/sm34937126) ※本パッチとは別訳
 
-- [次作: Dweller's Empty Path](https://tuyoki.itch.io/dwellers-empty-path)
+### Dwellers シリーズ
 
-  - [日本語化パッチ](https://github.com/proudust/escaped-chasm-jp-patch)
+1. [Dwellers of the Mountain's Forest (映像作品)](https://tuyoki.itch.io/dwellers-of-the-mountains-forest)
 
-- [前作: Dwellers of the Mountain's Forest (映像作品)](https://tuyoki.itch.io/dwellers-of-the-mountains-forest)
+2. Escaped Chasm
+
+3. [Dweller's Empty Path](https://tuyoki.itch.io/dwellers-empty-path)
+
+   - [日本語化パッチ](https://github.com/proudust/dwellers-empty-path-jp-patch)
